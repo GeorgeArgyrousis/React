@@ -38,24 +38,53 @@ input {
     width: 300px;
     font-size: 20px;
     position: absolute;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 20px;
 }
 
-.results {
+button {
+    width: 300px;
+    position: absolute;
+    top: calc(100vh / 2 + 70px);
+    background: none;
+    border: 2px solid white;
+    color: white;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    color: black;
+   background-color: white;
+}
+
+.card {
     display: flex;
     align-content: flex-start;
     flex-direction: column;
-    width: 300px;
+    width: 280px;
     position: absolute;
-    top: calc(100vh / 2 + 30px);
+    top: 20px;
+    border: 2px solid white;
+    padding: 10px;
 }
 
-.results a {
-    font-size: 18px;
+.card img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.card .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card a {
     color: white;
-    text-decoration: none;
-    margin: 5px 0;
-}
-
-.results a:hover {
-    background-color: rgb(54, 50, 50);
 }

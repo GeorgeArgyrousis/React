@@ -7,8 +7,7 @@ import ExampleFour from './components/ExampleFour';
 import ExampleFive from './components/ExampleFive';
 import ExampleSix from './components/ExampleSix';
 
-import Airports from './components/Airports';
-import { Data } from './components/Data';
+import GitHubProfile from './components/GitHubProfile';
 
 const Router = () => {
     return (
@@ -19,7 +18,7 @@ const Router = () => {
                 <Route exact path="/exampleFour" component={ExampleFour} />
                 <Route exact path="/exampleFive" component={ExampleFive} />
                 <Route exact path="/exampleSix" component={ExampleSix} />
-                <Route exact path="/" component={props => <Airports {...props} Data={Data} />} />
+                <Route exact path="/" component={GitHubProfile} />
                 
             </Switch>
         </BrowserRouter>
