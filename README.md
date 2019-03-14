@@ -1,6 +1,12 @@
+#Web Engineering - React Tutorial
+
+## SetUp 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+You will need to have `npm` installed. After downloading the project you will need to install all necessary dependencies. That can be achieved by running `npm install` (It will take some time). You will also need to manually install react-scripts `npm install react-scripts`. Now you can run the project on development mode using: `npm start`.
+
+## All Available Scripts
 
 In the project directory, you can run:
 
@@ -42,22 +48,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
 ### Deployment
 
