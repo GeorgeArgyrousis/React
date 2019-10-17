@@ -1,90 +1,181 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white !important;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+body,
+html {
+    height: 100%;
+	min-height: 100%;
+	width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    font-family: "NeueEinstellung", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(34, 34, 34);
+    width: inherit;
+    height: auto;
+}
+
+button,
+a {
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+h1,
+h3, 
+h4, 
+h5, 
+h6 {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+	border: none;
+    outline: none;
+    border-radius: 0;
+}
+
+input[type="text"] {
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 2px solid lightgray;
+}
+
+input[type="text"]:valid {
+    border-bottom: 2px solid black;
+}
+
+input:disabled {
+    background: lightgray;
+    border-bottom: 2px solid darkgray;
+}
+
+p {
+    font-size: 21px;
+    line-height: 27px;
+}
+
+button {
+    font-size: 16px;
+    padding: 16px 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
 }
 
 .container {
-    position: fixed;
+    width: 1000px;
+    height: inherit;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.exit {
+	position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* z-index: -1; */
+    background: rgba(34, 34, 34, 0.3);
+}
+
+/* */
+
+.pop-up .content {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-   
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column; 
-}
-
-input {
-    height: 50px;
+	background: white;
     width: 300px;
-    font-size: 20px;
-    position: absolute;
-    background: none;
-    border: none;
-    border-bottom: 2px solid white;
-    color: white;
-    font-size: 20px;
+    height: 400px;
+    max-width: 500px;
 }
 
-button {
-    width: 300px;
-    position: absolute;
-    top: calc(100vh / 2 + 70px);
-    background: none;
-    border: 2px solid white;
-    color: white;
-    height: 50px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-button:hover {
-    color: black;
-   background-color: white;
-}
-
-.card {
-    display: flex;
-    align-content: flex-start;
-    flex-direction: column;
-    width: 280px;
-    position: absolute;
-    top: 20px;
-    border: 2px solid white;
-    padding: 10px;
-}
-
-.card img {
-    width: 30%;
+.pop-up .content img {
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
 }
 
-.card .details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+/*  */
+
+.search-container {
+    margin: 70px 0;
+    width: 50%;
 }
 
-.card a {
-    color: white;
+.search-container .card-container,
+.search-container .recomendations {
+    width: 100%;
 }
+
+.search-container .card-container .item-complex,
+.search-container .card-container .item,
+.search-container .card-container h3 {
+    font-size: 21px;
+    width: 95%;
+    padding-left: 5%;
+    background: gray;
+}
+
+.search-container .card-container .item {
+    font-size: 18px;
+    justify-content: flex-start;
+    padding: 5px 0 5px 5%;
+    pointer-events: none;
+    background: lightgray;
+}
+
+.search-container .card-container .item-complex {
+    cursor: pointer;
+    background: lightgray;
+    padding: 10px 0 10px 5%;
+}
+
+.search-container .card-container .item-complex img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search-container .card-container .item-complex .name {
+    width: calc(100% - 50px);
+    height: 100%;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+
+.search-container .card-container .item-complex:hover {
+    background: darkgray;
+}
+

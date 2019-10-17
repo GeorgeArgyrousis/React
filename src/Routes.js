@@ -14,7 +14,7 @@ const Import = props => {
 export const Router = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" render={props => Import({ name: 'Home', ...props })} />
+            <Route exact path="/" render={props => Import({ name: 'Search', ...props })} />
         </Switch>
     </BrowserRouter>
 );
